@@ -27,6 +27,12 @@ FREE_UP_DISK: true
 
 反正也是半夜，试试吧。。。。，一觉醒来，第一次编译成功了。。。。
 
+大神的源码默认IP是192.168.1.1，正好和我的主路由冲突，方便起见，我改了下默认IP，要修改这个文件：
+/package/base-files/files/bin/config_generate
+
+不是有的教程说的。。。defalts.sh, 但改这个文件的时候发生了一小问题，不知道为什么，直接vi 这个路径，找不到文件，进入到/package/base-files/files/bin/子目录，vi config_generate就可以了，唉，小白出出坑啊
+
+
 同步的Win10 WSL Ubuntu 18.4 编译也在最后阶段出错（首先确实不是下载问题），提示一个Find Path$ 还有系统的windows home目录路径，建议删除，然后说
 Package/install失败（原提示没保留下来），想起大神们在视频里提到过环境变量问题的处理方式，执行：
 
