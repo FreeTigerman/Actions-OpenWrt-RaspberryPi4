@@ -35,6 +35,7 @@ FREE_UP_DISK: true
 
 同步的Win10 WSL Ubuntu 18.4 编译也在最后阶段出错（首先确实不是下载问题），提示一个Find Path$ 还有系统的windows home目录路径，建议删除，然后说
 Package/install失败：
+
 find: The relative path 'Files/WindowsApps/CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2019.522.0_x64__79rhkp1fndgsc' is included in the PATH environment variable, which is insecure in combination with the -execdir action of find.  Please remove that entry from $PATH
 package/Makefile:65: recipe for target 'package/install' failed
 make[2]: *** [package/install] Error 1
